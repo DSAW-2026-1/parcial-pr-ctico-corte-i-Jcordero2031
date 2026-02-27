@@ -1,0 +1,66 @@
+/* 1. Reset y Estructura Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 2. Contenedor Principal con Grid 2x2 */
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: #12219A;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* 3. Estilos de los Grupos (Celdas del Grid) */
+.corner {
+    display: flex;
+    gap: 10px;
+}
+
+/* 4. Posicionamiento Quirúrgico por Esquina */
+.corner-top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.corner-top-right {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.corner-bottom-left {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.corner-bottom-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* 5. Dimensiones y Colores de las Figuras */
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #70CCDB;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #DB5EAD;
+    border-radius: 50%;
+}
